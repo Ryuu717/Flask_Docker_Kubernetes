@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker & Kubernetes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Docker & Kubernetes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#docker">Docker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kubernetes">Kubernetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comparison">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-4 text-dark m-3">Docker & Kubernetes</h1>
+            <p class="lead text-dark">Simplifying Containerization and Orchestration</p>
+            <!-- <a href="#docker" class="btn btn-primary btn-lg">Learn More</a> -->
+        </div>
+    </section>
+
+    <!-- Docker Section -->
+    <section id="docker" class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>What is Docker?</h2>
+                <p>Docker is a platform that enables developers to automate the deployment of applications inside lightweight, portable containers.</p>
+                <ul>
+                    <li>Package applications with all dependencies</li>
+                    <li>Run applications consistently across any environment</li>
+                    <li>Improves development workflow and speeds up deployment</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img style="width: 300px;" src="https://ccie.tv/content/images/2019/08/docker.svg" alt="Docker" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kubernetes Section -->
+    <section id="kubernetes" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2>What is Kubernetes?</h2>
+                    <p>Kubernetes is an open-source platform that automates the deployment, scaling, and management of containerized applications.</p>
+                    <ul>
+                        <li>Orchestrates containers in clusters</li>
+                        <li>Ensures application availability and scaling</li>
+                        <li>Automates rollouts and rollbacks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="container py-5">
+        <h2 class="text-center">Docker vs Kubernetes</h2>
+        <table class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Docker</th>
+                    <th>Kubernetes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Focus</td>
+                    <td>Containerization</td>
+                    <td>Orchestration</td>
+                </tr>
+                <tr>
+                    <td>Scaling</td>
+                    <td>Limited, manual scaling</td>
+                    <td>Automatic scaling and load balancing</td>
+                </tr>
+                <tr>
+                    <td>Installation Complexity</td>
+                    <td>Easy to install and set up</td>
+                    <td>More complex installation</td>
+                </tr>
+                <tr>
+                    <td>Use Case</td>
+                    <td>Individual application packaging</td>
+                    <td>Managing multiple containers at scale</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Have questions? Reach out to us!</p>
+            <form class="mt-4">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 Docker & Kubernetes Info</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
